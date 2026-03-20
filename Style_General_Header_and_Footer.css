@@ -1,0 +1,178 @@
+/* ===========================
+   RESET BÁSICO
+=========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2f84dfc9;
+  font-family: 'Rokkitt', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rock Salt', cursive;
+}
+
+
+
+/* ===========================
+   CABECERA
+=========================== */
+.cabecera {
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: 1920px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.logo-nf {
+  width: 113px;
+  height: 60px;
+}
+
+.logo-nf img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.botones {
+  display: flex;
+  gap: 30px;
+}
+
+.botones a {
+  color: #3090ff;
+  font-family: "Rokkitt", serif;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.botones a:hover {
+  color: #ffffff;
+}
+
+/* Ajuste para contenido debajo del header */
+.hero {
+  margin-top: 90px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background-color: #0a1c3f;
+  padding: 4rem 0;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+.footer-info {
+  background: linear-gradient(to right, rgba(147, 180, 244, 0.92), rgba(48, 144, 255, 0.92));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-info p {
+  font-family: 'Rock Salt', cursive;
+  margin-bottom: 0.5rem;
+}
+
+.footer-info p:first-child {
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.footer-info p:last-child {
+  font-size: 16px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-links button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-links button:hover {
+  transform: scale(1.1);
+}
+
+.social-links svg {
+  width: 100%;
+  height: 100%;
+  fill: #93B4F4;
+}
+
+.footer-legal {
+  background: linear-gradient(to right, rgba(147, 180, 244, 0.92), rgba(48, 144, 255, 0.92));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Rock Salt', cursive;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-legal p {
+  margin-bottom: 0.5rem;
+}
+
+/* ===========================
+   UTILIDADES
+=========================== */
+.hidden {
+  display: none;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 80px;
+    letter-spacing: -4px;
+  }
+
+  .footer-legal {
+    text-align: center;
+  }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Información Festival - NebulaFest 2026</title>
+<link rel="stylesheet" href="style_Festival_Información.css">
+<link rel="stylesheet" href="Style_General_Header_and_Footer.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="cabecera">
+    <div class="logo-nf">
+      <img src="Imagenes/logoNF.png" alt="Logo NebulaFest">
+    </div>
+    <nav class="botones">
+      <a href="index.html">Inicio</a>
+      <a href="Pagina Festival Información.html">Festival</a>
+      <a href="Pagina Seleccion Oficial1.html">Selección Oficial</a>
+      <a href="Pagina Programacion.html">Programación</a>
+      <a href="Pagina Inscripciones.html">Inscripciones</a>
+      <a href="PaginaContacto.html">Contacto</a>
+    </nav>
+  </header>
+
+<!-- HERO -->
+ <header>
+   <h2>Festival Información</h2>
+ </header>
+
+<!-- CONTENIDO -->
+<section class="contenido">
+
+  <h2>NebulaFest</h2>
+
+  <p class="descripcion">
+    Descubre la programación de NebulaFest 2026: un recorrido de cuatro días
+    por lo mejor de la animación contemporánea, con proyecciones, charlas y
+    talleres que conectan a creadores y público.
+  </p>
+
+ <!--CARRUSEL DE IMÁGENES-->
+  <div class="image-carousel">
+
+  <div class="slide active">
+    <img src="Imagenes/wan-san-yip-ID1yWa1Wpx0-unsplash.jpg">
+    <div class="caption">Auditorio Moderno - Presentaciones Especiales</div>
+  </div>
+
+  <div class="slide">
+    <img src="Imagenes/krists-luhaers-AtPWnYNDJnM-unsplash.jpg">
+    <div class="caption">Proyección de cortometrajes</div>
+  </div>
+
+  <div class="slide">
+    <img src="Imagenes/redd-francisco-5U_28ojjgms-unsplash.jpg">
+    <div class="caption">Charla con animadores</div>
+  </div>
+
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+<script>
+
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(i){
+
+  slides.forEach(slide => slide.classList.remove("active"));
+
+  if(i >= slides.length) index = 0;
+  if(i < 0) index = slides.length - 1;
+
+  slides[index].classList.add("active");
+}
+
+document.querySelector(".next").onclick = () => {
+  index++;
+  showSlide(index);
+}
+
+document.querySelector(".prev").onclick = () => {
+  index--;
+  showSlide(index);
+}
+
+</script>
+</div>
+
+  <!-- HISTORIA -->
+  <h2>Historia</h2>
+
+  <p class="historia-texto">
+    NebulaFest nació en 2022 con el objetivo de crear un espacio para mostrar nuevas formas de animación y apoyar a jóvenes creadores.
+    Inspirado por los grandes festivales internacionales de animación, el proyecto busca dar visibilidad a obras innovadoras y conectar a artistas emergentes con profesionales de la industria.
+
+    <br><br>
+
+    Desde su primera edición, NebulaFest ha reunido cortometrajes de diferentes países y ha organizado proyecciones, charlas y talleres dedicados al arte de la animación.
+
+    <br><br>
+
+    Primera edición: 2022 <br>
+    Ciudad: Barcelona <br>
+    Proyectos presentados: +120
+  </p>
+
+
+  <!-- EQUIPO -->
+  <h2>Equipo</h2>
+
+  <div class="equipo">
+
+    <div class="miembro">
+      <img src="Imagenes/LauraNavarro.jpg">
+      <h3>Laura Navarro</h3>
+      <p>Dirección del festival<br>Directora y fundadora</p>
+    </div>
+
+    <div class="miembro">
+      <img src="Imagenes/DanielOrtega.jpg">
+      <h3>Daniel Ortega</h3>
+      <p>Programación<br>Selección oficial</p>
+    </div>
+
+    <div class="miembro">
+      <img src="Imagenes/AlexRomero.jpg">
+      <h3>Alex Romero</h3>
+      <p>Comunicación<br>Redes sociales y prensa</p>
+    </div>
+
+    <div class="miembro">
+      <img src="Imagenes/MartaKim.jpg">
+      <h3>Marta Kim</h3>
+      <p>Producción<br>Coordinación del evento</p>
+    </div>
+
+  </div>
+
+
+  <!-- PATROCINADORES -->
+  <h2>Patrocinadores</h2>
+
+  <div class="patrocinadores">
+
+    <img src="Imagenes/xunta.webp">
+    <img src="Imagenes/Coca-Cola-Logo-1987-2009.png">
+    <img src="Imagenes/fortiche.webp">
+    <img src="Imagenes/Pepsi-Symbol.png">
+
+  </div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Nebula Animation Festival 2026</p>
+                <p>info@nebulafestanimation.com</p>
+            </div>
+
+            <div class="social-links">
+                <!-- Facebook -->
+                <button aria-label="Facebook">
+                    <svg viewBox="0 0 40.0008 39.8536">
+                        <path d="M20 0C8.9544 0 0 8.9544 0 20C0 29.3792 6.4576 37.2496 15.1688 39.4112V26.112H11.0448V20H15.1688V17.3664C15.1688 10.5592 18.2496 7.404 24.9328 7.404C26.2 7.404 28.3864 7.6528 29.2808 7.9008V13.4408C28.8088 13.3912 27.9888 13.3664 26.9704 13.3664C23.6912 13.3664 22.424 14.6088 22.424 17.8384V20H28.9568L27.8344 26.112H22.424V39.8536C32.3272 38.6576 40.0008 30.2256 40.0008 20C40 8.9544 31.0456 0 20 0Z" />
+                    </svg>
+                </button>
+
+                <!-- TikTok -->
+                <button aria-label="TikTok">
+                    <svg viewBox="0 0 34.1667 40">
+                        <path d="M25.1209 0H18.3797V27.2463C18.3797 30.4928 15.787 33.1594 12.5604 33.1594C9.33389 33.1594 6.74115 30.4928 6.74115 27.2463C6.74115 24.058 9.27628 21.4492 12.3876 21.3333V14.4928C5.5312 14.6087 0 20.2319 0 27.2463C0 34.3189 5.64643 40 12.6181 40C19.5896 40 25.2361 34.2609 25.2361 27.2463V13.2753C27.7712 15.1304 30.8825 16.2319 34.1667 16.2899V9.44928C29.0964 9.27537 25.1209 5.10144 25.1209 0Z" />
+                    </svg>
+                </button>
+
+                <!-- X (Twitter) -->
+                <button aria-label="X">
+                    <svg viewBox="0 0 36.6667 33.1433">
+                        <path d="M28.8771 0H34.4996L22.2162 14.0392L36.6667 33.1433H25.3521L16.4901 21.5567L6.34991 33.1433H0.724053L13.8624 18.1268L0 0H11.6018L19.6123 10.5906L28.8771 0ZM26.9038 29.778H30.0193L9.90899 3.18855H6.56577L26.9038 29.778Z" />
+                    </svg>
+                </button>
+
+                <!-- YouTube -->
+                <button aria-label="YouTube">
+                    <svg viewBox="0 0 40 28.1328">
+                        <path d="M39.6016 6.07031C39.6016 6.07031 39.2109 3.3125 38.0078 2.10156C36.4844 0.507813 34.7813 0.5 34 0.40625C28.4063 -2.23517e-07 20.0078 0 20.0078 0H19.9922C19.9922 0 11.5937 -2.23517e-07 6 0.40625C5.21875 0.5 3.51562 0.507813 1.99219 2.10156C0.789063 3.3125 0.40625 6.07031 0.40625 6.07031C0.40625 6.07031 0 9.3125 0 12.5469V15.5781C0 18.8125 0.398437 22.0547 0.398437 22.0547C0.398437 22.0547 0.789062 24.8125 1.98437 26.0234C3.50781 27.6172 5.50781 27.5625 6.39844 27.7344C9.60156 28.0391 20 28.1328 20 28.1328C20 28.1328 28.4063 28.1172 34 27.7188C34.7813 27.625 36.4844 27.6172 38.0078 26.0234C39.2109 24.8125 39.6016 22.0547 39.6016 22.0547C39.6016 22.0547 40 18.8203 40 15.5781V12.5469C40 9.3125 39.6016 6.07031 39.6016 6.07031ZM15.8672 19.2578V8.01563L26.6719 13.6562L15.8672 19.2578Z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="footer-legal">
+                <p>Política de privacidad | Términos</p>
+                <p>© NebulaFest 2026</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

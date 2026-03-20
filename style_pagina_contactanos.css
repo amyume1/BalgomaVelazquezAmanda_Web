@@ -1,0 +1,79 @@
+/* HEADER SECTION */
+.header-section {
+  text-align: center;
+  padding: 150px 20px 50px;
+}
+
+.titulo {
+  font-family: 'Rock Salt';
+  font-size: 90px;
+}
+
+.descripcion {
+  margin-top: 20px;
+  font-family: 'Rokkitt';
+  font-size: 16px;
+  color: rgba(142,197,255,0.8);
+}
+
+/* FORM SECTION */
+.form-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background: #1c4587;
+}
+
+.formulario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(43,127,255,0.3);
+  background: rgba(29,41,61,0.5);
+  color: #fff;
+}
+
+.formulario button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #00b8db 0%, #2b7fff 100%);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  opacity: 0.9;
+}
+
+/* INFO CONTACTO */
+.info-contacto {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-contacto div {
+  background: rgba(15,23,43,0.3);
+  border: 1px solid rgba(43,127,255,0.2);
+  border-radius: 14px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.info-contacto img {
+  width: 32px;
+  margin-bottom: 10px;
+}

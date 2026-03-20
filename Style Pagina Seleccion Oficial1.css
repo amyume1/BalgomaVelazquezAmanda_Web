@@ -1,0 +1,241 @@
+/* HERO */
+.hero-section {
+    text-align: center;
+    padding: 150px 20px 100px;
+    margin: 0 200px;
+    border-radius: 20px;
+}
+
+
+.hero-title {
+    font-family: "Rock Salt", cursive;
+    font-size: 90px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size:  20px;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Cortometrajes */
+.films-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.film-card {
+    flex: 1 0 0;
+    min-width: 350px;
+    max-width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.film-card:hover {
+    transform: scale(1.05);
+}
+
+.film-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.film-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.film-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));
+    pointer-events: none;
+}
+
+.film-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.film-info-card {
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.film-title {
+    font-family: 'Rokkitt';
+    font-weight: 600;
+    color: #f6f8fb;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: -0.4px;
+    margin-bottom: 8px;
+}
+
+.film-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: #f6f8fb;
+    font-family: 'Rokkitt';
+    font-size: 18px;
+}
+
+/* SECCIONES ADICIONALES */
+.category-section {
+    margin: 60px 0;
+    padding: 60px 40px;
+    background: #4fa3ff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.category-title {
+    font-family: "Rock Salt", cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-description {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Carrusel de imágenes */
+.image-carousel {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.slide img:hover {
+    transform: scale(1.1);
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev:hover, .next:hover {
+    background: black;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  .tabla-cabecera, 
+  .tabla-contenido .fila {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabla-cabecera .columna, 
+  .tabla-contenido .columna {
+    width: 100% !important;
+    flex: none;
+  }
+
+  .animaciones {
+    grid-template-columns: 1fr;
+  }
+
+  .fecha-card {
+    width: 100%;
+  }
+
+  .cta .button-large {
+    width: 100%;
+  }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

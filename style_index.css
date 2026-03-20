@@ -1,0 +1,529 @@
+
+/* ===========================
+   HERO
+=========================== */
+.titulo-evento {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.nebulosa-foto {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  position: relative;
+  top: -150px; /* sube la imagen un poco detrás de la cabecera */
+  z-index: 1; /* detrás de la cabecera */
+}
+
+.titulo-evento {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.nebula-fest {
+  font-family: "Rock Salt", cursive;
+  font-size: 120px;
+  color: #1c4587;
+}
+
+.cabecera {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.hero {
+  margin-top: 90px; /* igual a la altura de la cabecera */
+}
+
+/* ===========================
+   INTRO / TITULO + INFO
+=========================== */
+.titulo-y-ligera-info {
+  margin-top: 0;
+  padding: 60px 20px;
+  background-color: #1e3a8a; /* fondo azul */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.titulo-y-ligera-info h2 {
+  font-size: 48px;
+}
+
+.titulo-y-ligera-info p {
+  font-size: 18px;
+}
+
+/* ===========================
+   ANIMACIONES / TARJETAS
+=========================== */
+.animaciones {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* SECCIÓN ANIMACIONES */
+.animaciones {
+   /* fondo azul claro de la sección */
+  max-width: 1200px; /* ancho máximo opcional */
+  margin: 0 auto; /* centra la sección */
+  padding: 60px 20px; /* espacio alrededor de la sección */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 30px; /* espacio entre tarjetas */
+}
+
+
+.animaciones article {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background: #1806b8;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.animaciones article:hover {
+  transform: translateY(-5px);
+}
+
+.animaciones img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.animaciones .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+}
+
+/* ===========================
+   BOTONES CTA
+=========================== */
+.cta,
+.cta-seleccion {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.button-large {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 600px;
+  padding: 15px 0;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.button-large:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.view-all {
+  color: #fff;
+  font-family: 'Rock Salt', cursive;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* ===========================
+   PROGRAMACIÓN / FECHAS
+=========================== */
+.programacion {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding:100px 100px;
+  text-align: center;
+  background-color: #50a4ff;
+}
+
+.programacion h2 {
+  font-size: 48px;
+  font-family: 'Rock Salt', cursive;
+  color: #1c4587;
+  margin-bottom: 20px;
+}
+
+.programacion .resumen {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.fechas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.fecha-card {
+  background: linear-gradient(135deg, #1c4587, #3a7af2);
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 180px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fecha-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.fecha-card .dia {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.fecha-card .nombre-dia {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.fecha-card .mes {
+  font-size: 16px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* ===========================
+   SELECCIÓN OFICIAL / TABLA
+=========================== */
+.seleccion-oficial {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1c4587, #3a7af2);
+  border-radius: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.titulo-seleccion {
+  font-family: 'Rock Salt', cursive;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.tabla-cabecera,
+.tabla-contenido .fila {
+  display: flex;
+  gap: 16px;
+  padding: 12px 20px;
+  align-items: center;
+}
+
+.tabla-cabecera {
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.tabla-cabecera .columna { flex: 1; }
+.tabla-cabecera .ancho-fijo { width: 100px; flex: none; }
+
+.tabla-contenido .fila {
+  border-bottom: 1px dashed rgba(255,255,255,0.4);
+  transition: background 0.3s;
+}
+
+.tabla-contenido .fila:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+}
+
+.tabla-contenido .columna { flex: 1; }
+.tabla-contenido .ancho-fijo { width: 100px; flex: none; }
+
+/* ===========================
+   SECCIÓN INSCRIPCIONES
+=========================== */
+.subscribe-section {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.frame-43 {
+  max-width: 1400px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.subscribe-container {
+  background: #3a7af2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  width: 100%;
+}
+
+.paper-graphics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 10px;
+  width: 64px;
+}
+
+.holes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.ellipse {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #0f0e0e;
+  border: 1px solid #0f0e0e;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex: 1;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.tune-into-the-signal {
+  font-family: "InstrumentSerif-Italic", serif;
+  font-size: 48px;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+}
+
+.no-noise-just-deep-cuts-on-music-film-and-culture {
+  font-family: "Geist-Regular", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.button-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 68px;
+  padding: 0 24px;
+  background: #0f0e0e;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.button-small:hover {
+  background: #0c0b0b;
+}
+
+.subscribe {
+  color: #f6f8fb;
+  font-family: "Geist-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+/* Footer */
+footer {
+    background-color: #0a1c3f;
+    padding: 4rem 0;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    align-items: center;
+}
+
+.footer-info {
+    background: linear-gradient(to right, rgba(147, 180, 244, 0.92), rgba(48, 144, 255, 0.92));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-info p {
+    font-family: 'Rock Salt', cursive;
+    margin-bottom: 0.5rem;
+}
+
+.footer-info p:first-child {
+    font-size: 20px;
+    line-height: 1.75;
+}
+
+.footer-info p:last-child {
+    font-size: 16px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.social-links button {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-links button:hover {
+    transform: scale(1.1);
+}
+
+.social-links svg {
+    width: 100%;
+    height: 100%;
+    fill: #93B4F4;
+}
+
+.footer-legal {
+    background: linear-gradient(to right, rgba(147, 180, 244, 0.92), rgba(48, 144, 255, 0.92));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Rock Salt', cursive;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-legal p {
+    margin-bottom: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 80px;
+        letter-spacing: -4px;
+    }
+
+    .info-card h2 {
+        font-size: 36px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-legal {
+        text-align: center;
+    }
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  .tabla-cabecera, 
+  .tabla-contenido .fila {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabla-cabecera .columna, 
+  .tabla-contenido .columna {
+    width: 100% !important;
+    flex: none;
+  }
+
+  .animaciones {
+    grid-template-columns: 1fr;
+  }
+
+  .fecha-card {
+    width: 100%;
+  }
+
+  .cta .button-large {
+    width: 100%;
+  }
+}
